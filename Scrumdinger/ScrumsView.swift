@@ -13,7 +13,7 @@ struct ScrumsView: View {
     
     var body: some View {
         List {
-            ForEach(scrums) { $scrum in
+            ForEach($scrums) { $scrum in
                 NavigationLink(destination: DetailView(scrum: $scrum)) {
                     CardView(scrum: scrum)
                 }

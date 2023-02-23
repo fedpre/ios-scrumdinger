@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct DetailView: View {
-    let scrum: DailyScrum
-    @State private var data = DailyScrum.Data()
+    @Binding var scrum: DailyScrum
     
+    @State private var data = DailyScrum.Data()
     @State private var isPresentingEditView = false
     
     var body: some View {

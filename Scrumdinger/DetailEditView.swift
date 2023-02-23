@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailEditView: View {
-    @Binding var data = DailyScrum.Data
+    @Binding var data: DailyScrum.Data
     @State private var newAttendeeName = ""
     
     var body: some View {
